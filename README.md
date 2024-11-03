@@ -2,6 +2,11 @@
 
 - Setup project using Vite
 - Configured TailwindCSS
+- Header
+- Routing
+- Login Form
+- Form Validation
+- Configured Firebase for authentication and deployment
 
 # Features
 

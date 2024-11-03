@@ -1,7 +1,23 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./components/Login";
+import Browse from "./components/Browse";
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login />,
+    },
+    {
+      path: "browse",
+      element: <Browse />,
+    },
+  ]);
   return (
     <>
-      <h1 className="text-center text-3xl text-red-600">GeminiFlix</h1>
+      <div>
+        <RouterProvider router={router} />
+      </div>
     </>
   );
 }
